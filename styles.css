@@ -370,18 +370,18 @@ strong {
     background: var(--color-gray-100);
 }
 
-/* Keynotes: light theme-red fill + left accent bar so they clearly stand out */
+/* Keynotes: subtle theme-red tint + left accent bar so they stand out gently */
 .schedule-keynote {
-    background: var(--color-primary-light);
+    background: rgba(151, 43, 52, 0.13);
     box-shadow: inset 4px 0 0 var(--color-primary);
 }
 
 .schedule-session.schedule-keynote[open] {
-    background: var(--color-primary-light);
+    background: rgba(151, 43, 52, 0.13);
 }
 
 .schedule-keynote .schedule-event {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-gray-900);
 }
 
