@@ -370,13 +370,14 @@ strong {
     background: var(--color-gray-100);
 }
 
-/* Keynotes: theme-red tint, strong enough to stand out next to gray sessions */
+/* Keynotes: light theme-red fill + left accent bar so they clearly stand out */
 .schedule-keynote {
-    background: rgba(151, 43, 52, 0.13);
+    background: var(--color-primary-light);
+    box-shadow: inset 4px 0 0 var(--color-primary);
 }
 
 .schedule-session.schedule-keynote[open] {
-    background: rgba(151, 43, 52, 0.13);
+    background: var(--color-primary-light);
 }
 
 .schedule-keynote .schedule-event {
