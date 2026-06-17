@@ -356,12 +356,32 @@ strong {
     color: var(--color-gray-800);
 }
 
+.schedule-event-bold {
+    font-weight: 600;
+    color: var(--color-gray-900);
+}
+
+/* Paper sessions: subtle neutral tint so they read as grouped blocks */
 .schedule-session {
-    background: var(--color-white);
+    background: var(--color-gray-50);
 }
 
 .schedule-session[open] {
-    background: var(--color-gray-50);
+    background: var(--color-gray-100);
+}
+
+/* Keynotes: theme-red tint (overrides the neutral session tint) */
+.schedule-keynote {
+    background: rgba(151, 43, 52, 0.05);
+}
+
+.schedule-session.schedule-keynote[open] {
+    background: rgba(151, 43, 52, 0.08);
+}
+
+.schedule-keynote .schedule-event {
+    font-weight: 600;
+    color: var(--color-gray-900);
 }
 
 details.schedule-session {
@@ -451,6 +471,20 @@ details.schedule-session[open]>summary::after {
     .schedule-time {
         font-weight: 600;
     }
+
+    /* Stack expandable session summaries: time + arrow on top, title below */
+    details.schedule-session>summary {
+        grid-template-columns: 1fr auto;
+        row-gap: 2px;
+    }
+
+    details.schedule-session>summary .schedule-time {
+        grid-column: 1 / 2;
+    }
+
+    details.schedule-session>summary .schedule-event {
+        grid-column: 1 / -1;
+    }
 }
 
 .about-workshop-parts {
@@ -513,6 +547,19 @@ details.schedule-session[open]>summary::after {
     font-size: 1.1rem;
     color: var(--color-gray-700);
     margin-bottom: var(--spacing-md);
+}
+
+.resources-group {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: var(--spacing-lg) 0 var(--spacing-xs);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.resources-group:first-of-type {
+    margin-top: 0;
 }
 
 .resources-list {
