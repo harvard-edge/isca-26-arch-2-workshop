@@ -461,6 +461,21 @@ details.schedule-session[open]>summary::after {
     margin-top: 2px;
 }
 
+.schedule-abstract {
+    font-size: 0.92rem;
+    color: var(--color-gray-700);
+    line-height: 1.55;
+    margin-top: 0.45rem;
+}
+
+.schedule-abstract p {
+    margin: 0 0 0.6rem;
+}
+
+.schedule-abstract p:last-child {
+    margin-bottom: 0;
+}
+
 @media (max-width: 600px) {
     .schedule-row {
         grid-template-columns: 1fr;
