@@ -102,10 +102,19 @@
                     <button type="button" class="btn" id="schedule-collapse-all">Collapse all</button>
                 </div>
                 <div class="schedule-table">
-                    <div class="schedule-row">
-                        <div class="schedule-time">8:00–8:15</div>
-                        <div class="schedule-event">Welcome and Opening Remarks</div>
-                    </div>
+                    <details class="schedule-session">
+                        <summary>
+                            <span class="schedule-time">8:00–8:15</span>
+                            <span class="schedule-event">Welcome and Opening Remarks</span>
+                        </summary>
+                        <ul class="schedule-talk-list">
+                            <li class="schedule-talk-item">
+                                <span class="schedule-talk-meta">Featuring the launch of the
+                                    <a href="https://arch2.mlsysbook.ai/" target="_blank" rel="noopener">Architecture
+                                        2.0: Agentic Design Loops for Computing System Synthesis</a> book.</span>
+                            </li>
+                        </ul>
+                    </details>
 
                     <details class="schedule-session">
                         <summary>
@@ -306,11 +315,20 @@
                         </ul>
                     </details>
 
-                    <div class="schedule-row">
-                        <div class="schedule-time">15:00–15:30</div>
-                        <div class="schedule-event schedule-event-bold">Tutorial — ArchEval: Evaluating AI Agent
-                            Capability for Computer Architecture Design</div>
-                    </div>
+                    <details class="schedule-session">
+                        <summary>
+                            <span class="schedule-time">15:00–15:30</span>
+                            <span class="schedule-event schedule-event-bold">Tutorial — ArchEval: Measuring AI Agents as
+                                Computer Architects</span>
+                        </summary>
+                        <ul class="schedule-talk-list">
+                            <li class="schedule-talk-item">
+                                <span class="schedule-talk-meta">Chenyu Wang, Zishen Wan, Jeffrey Ma, Shvetank Prakash,
+                                    Zhenting Qi, Haebin Do, Andy Cheng, Arya Tschand, Jiahe Shi, Yilun Du, Vijay Janapa
+                                    Reddi</span>
+                            </li>
+                        </ul>
+                    </details>
 
                     <div class="schedule-row">
                         <div class="schedule-time">15:30–16:00</div>
@@ -506,6 +524,12 @@
                 <p>
                     We provide a small list of relevant resources to Architecture 2.0:
                 </p>
+
+                <h3 class="resources-group">Books</h3>
+                <ul class="resources-list">
+                    <li><a href="https://arch2.mlsysbook.ai/" target="_blank" rel="noopener">Architecture 2.0: Agentic
+                            Design Loops for Computing System Synthesis</a></li>
+                </ul>
 
                 <h3 class="resources-group">Papers & Articles</h3>
                 <ul class="resources-list">
